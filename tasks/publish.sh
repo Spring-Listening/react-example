@@ -18,7 +18,6 @@ cd "$(dirname "$0")"
 # We assume that all the commands in the pipeline set their return code
 # properly and that we do not need to validate that the output is correct
 set -e
-
 # Echo every command being executed
 set -x
 
@@ -29,7 +28,6 @@ root_path=$PWD
 if [ -n "$(git status --porcelain)" ]; then
   echo "Your git status is not clean. Aborting.";
   exit 1;
-fi
 
 # Compile
 cd packages/react-error-overlay/
