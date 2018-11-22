@@ -4,6 +4,7 @@ node_modules/
 build
 .DS_Store
 *.tgz
+yarn.lock*
 my-app*
 template/src/__tests__/__snapshots__/
 lerna-debug.log
